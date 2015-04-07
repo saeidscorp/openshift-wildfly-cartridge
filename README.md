@@ -24,9 +24,9 @@ We recommend to create a scalable application since the WildFly cartridge might
 consume more storage on free plans. With a scalable application, any additional cartridges, such as a database cartridge, will be installed on separate
 gears.
 
-### Create a new WildFly app based on an existing app
+### Create a new WildFly 8 app based on an existing app
 
-If you already have an existing WildFly OpenShift application, you can create a new WildFly app based on the existing one using the RHC --from-app command. First, make sure you have the latest version of the OpenShift command line tools:
+If you already have an existing WildFly 8 OpenShift application, you can create a new WildFly 8 app based on the existing one using the RHC --from-app command. First, make sure you have the latest version of the OpenShift command line tools:
 
     gem update rhc
 
