@@ -24,6 +24,20 @@ We recommend to create a scalable application since the WildFly cartridge might 
 
 **NOTE:** It will soon be possible to create a WildFly 9 app using the OpenShift Web Console as well. Stay tuned for that.
 
+### Create a new WildFly 9 app based on an existing app
+
+If you already have an existing WildFly 9 OpenShift application, you can create a new WildFly 9 app based on the existing one using the RHC --from-app command. First, make sure you have the latest version of the OpenShift command line tools:
+
+    gem update rhc
+
+Then, create your new WildFly app:
+
+    rhc app create <NEW_WILDFLY_APP> --from-app <OLD_WILDFLY_APP>
+
+This creates an application that's a clone of your existing one (i.e., same gear size, scaling configuration, environment variables, git repository, etc.). This means that your new WildFly 9 application will have the same configuration and deployment(s) as your existing application.
+
+Because the --from-app command relies on an application snapshot, it will take some time to complete (be patient!).
+
 ### JBoss CLI
 
 This cartridge provides an OpenShift compatible wrapper of the JBoss CLI tool on the gear PATH, located at $OPENSHIFT_WILDFLY_DIR/bin/tools/jboss-cli.sh. Use the following command to connect to the WildFly instance with the CLI tool:
