@@ -31,7 +31,7 @@
         <extension module="org.wildfly.extension.request-controller"/>
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
-        <!-- extension module="org.wildfly.iiop-openjdk"/ -->
+        <extension module="org.wildfly.iiop-openjdk"/>
     </extensions>
     <management>
         <security-realms>
@@ -254,7 +254,7 @@
                     <keepalive-time time="100" unit="milliseconds"/>
                 </thread-pool>
             </thread-pools>
-            <!-- iiop enable-by-default="false" use-qualified-name="false"/-->
+            <iiop enable-by-default="false" use-qualified-name="false"/>
             <default-security-domain value="other"/>
             <default-missing-method-permissions-deny-access value="true"/>
             <log-system-exceptions value="true"/>
@@ -303,12 +303,11 @@
                 </replicated-cache>
             </cache-container>
         </subsystem>
-        <!-- Leave this commented out until a SocketException that occurs with iiop-openjdk on OpenShift is resolved -->
-        <!-- subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0"-->
-            <!-- orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"-->
-                <!-- initializers transactions="spec" security="identity"/-->
-            <!--/orb-->
-        <!--/subsystem-->
+        <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
+            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl">
+                <initializers transactions="spec" security="identity"/>
+            </orb>
+        </subsystem>
         <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
         <subsystem xmlns="urn:jboss:domain:jca:3.0">
             <archive-validation enabled="true" fail-on-error="true" fail-on-warn="false"/>
@@ -572,8 +571,8 @@
         <socket-binding name="ajp" port="${jboss.ajp.port:8009}"/>
         <socket-binding name="http" port="${jboss.http.port:8080}"/>
         <socket-binding name="https" port="${jboss.https.port:8443}"/>
-        <!-- socket-binding name="iiop" interface="unsecure" port="3528"/-->
-        <!-- socket-binding name="iiop-ssl" interface="unsecure" port="3529"/-->
+        <socket-binding name="iiop" interface="unsecure" port="3528"/>
+        <socket-binding name="iiop-ssl" interface="unsecure" port="3529"/>
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
         <outbound-socket-binding name="mail-smtp">
