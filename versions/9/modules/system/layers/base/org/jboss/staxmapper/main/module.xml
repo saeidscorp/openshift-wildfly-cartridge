@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="staxmapper-1.2.0.Beta1.jar"/>
+        <resource-root path="staxmapper-1.2.0.Final.jar"/>
     </resources>
 
     <dependencies>

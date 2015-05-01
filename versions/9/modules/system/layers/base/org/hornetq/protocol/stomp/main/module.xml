@@ -27,7 +27,7 @@
         <property name="jboss.api" value="deprecated"/>
     </properties>
     <resources>
-        <resource-root path="hornetq-stomp-protocol-2.4.5.Final.jar"/>
+        <resource-root path="hornetq-stomp-protocol-2.4.7.Final.jar"/>
     </resources>
 
     <dependencies>

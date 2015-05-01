@@ -29,7 +29,7 @@
     </properties>
 
     <resources>
-        <resource-root path="weld-spi-2.2.SP3.jar"/>
+        <resource-root path="weld-spi-2.2.SP4.jar"/>
     </resources>
 
     <dependencies>

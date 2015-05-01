@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jberet-core-1.1.0.Beta1.jar"/>
+        <resource-root path="jberet-core-1.1.0.Final.jar"/>
     </resources>
 
     <dependencies>

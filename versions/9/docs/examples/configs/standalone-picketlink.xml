@@ -238,7 +238,7 @@
                     <file-store passivation="false" purge="false"/>
                 </local-cache>
             </cache-container>
-            <cache-container name="hibernate" default-cache="local-query" module="org.hibernate">
+            <cache-container name="hibernate" default-cache="local-query" module="org.hibernate.infinispan">
                 <local-cache name="entity">
                     <transaction mode="NON_XA"/>
                     <eviction strategy="LRU" max-entries="10000"/>
@@ -252,9 +252,8 @@
             </cache-container>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
-            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl">
-                <initializers transactions="spec" security="identity"/>
-            </orb>
+            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"/>
+            <initializers transactions="spec" security="identity"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
         <subsystem xmlns="urn:jboss:domain:jca:3.0">
@@ -682,7 +681,6 @@
         <socket-binding name="https" port="${jboss.https.port:8443}"/>
         <socket-binding name="iiop" interface="unsecure" port="3528"/>
         <socket-binding name="iiop-ssl" interface="unsecure" port="3529"/>
-        <socket-binding name="messaging-group" port="0" multicast-address="${jboss.messaging.group.address:231.7.7.7}" multicast-port="${jboss.messaging.group.port:9876}"/>
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
         <outbound-socket-binding name="mail-smtp">

@@ -208,7 +208,7 @@
                         <file-store passivation="false" purge="false"/>
                     </local-cache>
                 </cache-container>
-                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate">
+                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate.infinispan">
                     <local-cache name="entity">
                         <transaction mode="NON_XA"/>
                         <eviction strategy="LRU" max-entries="10000"/>
@@ -494,7 +494,7 @@
                         <file-store/>
                     </distributed-cache>
                 </cache-container>
-                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate">
+                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate.infinispan">
                     <transport lock-timeout="60000"/>
                     <invalidation-cache name="entity" mode="SYNC">
                         <transaction mode="NON_XA"/>
@@ -837,7 +837,7 @@
                         <file-store passivation="false" purge="false"/>
                     </local-cache>
                 </cache-container>
-                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate">
+                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate.infinispan">
                     <local-cache name="entity">
                         <transaction mode="NON_XA"/>
                         <eviction strategy="LRU" max-entries="10000"/>
@@ -851,9 +851,8 @@
                 </cache-container>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
-                <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl">
-                    <initializers transactions="spec" security="identity"/>
-                </orb>
+                <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"/>
+                <initializers transactions="spec" security="identity"/>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
             <subsystem xmlns="urn:jboss:domain:jca:3.0">
@@ -1212,7 +1211,7 @@
                         <file-store/>
                     </distributed-cache>
                 </cache-container>
-                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate">
+                <cache-container name="hibernate" default-cache="local-query" module="org.hibernate.infinispan">
                     <transport lock-timeout="60000"/>
                     <invalidation-cache name="entity" mode="SYNC">
                         <transaction mode="NON_XA"/>
@@ -1227,9 +1226,8 @@
                 </cache-container>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
-                <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl">
-                    <initializers transactions="spec" security="identity"/>
-                </orb>
+                <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"/>
+                <initializers transactions="spec" security="identity"/>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
             <subsystem xmlns="urn:jboss:domain:jca:3.0">
@@ -1329,13 +1327,15 @@
                     </acceptors>
                     <broadcast-groups>
                         <broadcast-group name="bg-group1">
-                            <socket-binding>messaging-group</socket-binding>
+                            <jgroups-stack>udp</jgroups-stack>
+                            <jgroups-channel>hq-cluster</jgroups-channel>
                             <connector-ref>http-connector</connector-ref>
                         </broadcast-group>
                     </broadcast-groups>
                     <discovery-groups>
                         <discovery-group name="dg-group1">
-                            <socket-binding>messaging-group</socket-binding>
+                            <jgroups-stack>udp</jgroups-stack>
+                            <jgroups-channel>hq-cluster</jgroups-channel>
                         </discovery-group>
                     </discovery-groups>
                     <cluster-connections>
@@ -1549,7 +1549,6 @@
             <socket-binding name="https" port="${jboss.https.port:8443}"/>
             <socket-binding name="iiop" interface="unsecure" port="3528"/>
             <socket-binding name="iiop-ssl" interface="unsecure" port="3529"/>
-            <socket-binding name="messaging-group" port="0" multicast-address="${jboss.messaging.group.address:231.7.7.7}" multicast-port="${jboss.messaging.group.port:9876}"/>
             <socket-binding name="txn-recovery-environment" port="4712"/>
             <socket-binding name="txn-status-manager" port="4713"/>
             <outbound-socket-binding name="mail-smtp">
@@ -1568,7 +1567,6 @@
             <socket-binding name="jgroups-tcp-fd" port="57600"/>
             <socket-binding name="jgroups-udp" port="55200" multicast-address="${jboss.default.multicast.address:230.0.0.4}" multicast-port="45688"/>
             <socket-binding name="jgroups-udp-fd" port="54200"/>
-            <socket-binding name="messaging-group" port="0" multicast-address="${jboss.messaging.group.address:231.7.7.7}" multicast-port="${jboss.messaging.group.port:9876}"/>
             <socket-binding name="modcluster" port="0" multicast-address="224.0.1.105" multicast-port="23364"/>
             <socket-binding name="txn-recovery-environment" port="4712"/>
             <socket-binding name="txn-status-manager" port="4713"/>

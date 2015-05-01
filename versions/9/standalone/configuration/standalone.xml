@@ -285,7 +285,7 @@
                     <file-store/>
                 </distributed-cache>
             </cache-container>
-            <cache-container name="hibernate" default-cache="local-query" module="org.hibernate">
+            <cache-container name="hibernate" default-cache="local-query" module="org.hibernate.infinispan">
                 <transport lock-timeout="60000"/>
                 <local-cache name="local-query">
                     <transaction mode="NONE"/>
@@ -304,9 +304,8 @@
             </cache-container>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
-            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl">
-                <initializers transactions="spec" security="identity"/>
-            </orb>
+            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"/>
+            <initializers transactions="spec" security="identity"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
         <subsystem xmlns="urn:jboss:domain:jca:3.0">
