@@ -1,13 +1,13 @@
 Name: wildfly
 Cartridge-Short-Name: WILDFLY
-Display-Name: WildFly Application Server 9
+Display-Name: WildFly Application Server 10
 Description: "The leading open source Java EE7 application server for enterprise Java applications. Popular development frameworks include CDI, DeltaSpike and Spring."
-Version: '9'
-Source-Url: https://github.com/openshift-cartridges/openshift-wildfly-cartridge/archive/wildfly-9.zip
+Version: '10'
+Source-Url: https://github.com/openshift-cartridges/openshift-wildfly-cartridge/archive/wildfly-10.zip
 License: LGPL
 License-Url: http://www.gnu.org/copyleft/lesser.txt
 Vendor: JBoss
-Cartridge-Version: '0.0.9'
+Cartridge-Version: '0.1.0'
 Cartridge-Vendor: jboss
 Categories:
   - service
@@ -50,7 +50,7 @@ Cart-Data:
     Type: environment
     Description: "Unique ID which identified the gear. This value changes between gears."
 Provides:
-  - wildfly-9
+  - wildfly-10
   - "wildfly"
   - wildfly-standalone
 Publishes:

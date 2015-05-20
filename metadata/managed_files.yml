@@ -1,6 +1,6 @@
 ---
 snapshot_exclusions:
-- ~/wildfly/versions/9
+- ~/wildfly/versions/10
 - ~/wildfly/modules
 locked_files:
 - bin/

@@ -34,7 +34,7 @@ update-configuration java8
 $OPENSHIFT_WILDFLY_DIR/bin/add-user.sh --user ${username} --password ${password} --silent --enable
 
 client_result ""
-client_result "WildFly 9 administrator added.  Please make note of these credentials:"
+client_result "WildFly 10 administrator added.  Please make note of these credentials:"
 client_result ""
 client_result "   Username: $username"
 client_result "   Password: $password"
