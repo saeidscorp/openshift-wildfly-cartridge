@@ -29,6 +29,8 @@ password=$(generate_password)
 echo "$username" > $OPENSHIFT_WILDFLY_DIR/env/OPENSHIFT_WILDFLY_USERNAME
 echo "$password" > $OPENSHIFT_WILDFLY_DIR/env/OPENSHIFT_WILDFLY_PASSWORD
 
+update-configuration java8
+
 $OPENSHIFT_WILDFLY_DIR/bin/add-user.sh --user ${username} --password ${password} --silent --enable
 
 client_result ""
@@ -50,4 +52,3 @@ client_result ""
 touch ${OPENSHIFT_WILDFLY_DIR}/env/OPENSHIFT_WILDFLY_CLUSTER
 #touch ${OPENSHIFT_WILDFLY_DIR}/env/OPENSHIFT_JBOSSAS_CLUSTER_REMOTING
 
-update-configuration java8

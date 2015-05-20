@@ -66,16 +66,6 @@ $OPENSHIFT_WILDFLY_PASSWORD
 	
 In this example, you would visit 127.0.0.1:9990 to access the WildFly Admin Console from your local computer.
 
-### Markers
-
-Adding marker files to `.openshift/markers` will have the following effects:
-
-    java8                Will run WildFly with Java 8 if present
-
-    java7                Will run WildFly with Java 7 if present
-
-New WildFly apps will default to using Java 8.
-
 ### Troubleshooting
 
 **Q:** Can the following error that sometimes occurs on startup be ignored? My app deploys fine even when this error occurs in the server log file.
