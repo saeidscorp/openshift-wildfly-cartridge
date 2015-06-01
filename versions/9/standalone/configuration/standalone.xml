@@ -348,7 +348,6 @@
                     <protocol type="MERGE3"/>
                     <protocol type="FD"/>
                     <protocol type="VERIFY_SUSPECT"/>
-                    <protocol type="BARRIER"/>
                     <protocol type="pbcast.NAKACK2"/>
                     <protocol type="UNICAST3"/>
                     <protocol type="pbcast.STABLE"/>
@@ -360,11 +359,9 @@
                     <protocol type="pbcast.GMS">
                         <property name="join_timeout">30000</property>
                     </protocol>
-                    <protocol type="UFC"/>
                     <protocol type="MFC"/>
                     <protocol type="FRAG2"/>
-                    <!--protocol type="pbcast.STATE_TRANSFER"/>
-                    <protocol type="pbcast.FLUSH"/-->
+                    <protocol type="RSVP"/>
                 </stack>
             </stacks>
         </subsystem>
