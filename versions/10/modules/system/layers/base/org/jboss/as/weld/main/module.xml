@@ -33,7 +33,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-weld-10.0.0.Alpha1.jar"/>
+        <resource-root path="wildfly-weld-10.0.0.Alpha2.jar"/>
     </resources>
 
     <dependencies>

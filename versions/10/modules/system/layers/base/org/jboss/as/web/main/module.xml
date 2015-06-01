@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-web-10.0.0.Alpha1.jar"/>
+        <resource-root path="wildfly-web-10.0.0.Alpha2.jar"/>
     </resources>
 
     <dependencies>

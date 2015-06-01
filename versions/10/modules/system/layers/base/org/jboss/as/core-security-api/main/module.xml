@@ -27,7 +27,7 @@
         <property name="jboss.api" value="deprecated"/>
     </properties>
     <resources>
-        <resource-root path="wildfly-core-security-api-2.0.0.Alpha2.jar"/>
+        <resource-root path="wildfly-core-security-api-2.0.0.Alpha3.jar"/>
    </resources>
 
     <dependencies>

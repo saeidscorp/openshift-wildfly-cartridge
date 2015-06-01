@@ -28,8 +28,8 @@
     </properties>
 
     <resources>
-        <resource-root path="infinispan-query-7.2.1.Final.jar"/>
-        <resource-root path="infinispan-objectfilter-7.2.1.Final.jar"/>
+        <resource-root path="infinispan-query-7.2.2.Final.jar"/>
+        <resource-root path="infinispan-objectfilter-7.2.2.Final.jar"/>
     </resources>
 
     <dependencies>

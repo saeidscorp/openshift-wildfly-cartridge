@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="release-stream-2.6.8.Final-resources.jar"/>
+        <resource-root path="release-stream-2.6.10.Final-resources.jar"/>
     </resources>
 
     <dependencies>
