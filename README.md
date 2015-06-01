@@ -1,6 +1,6 @@
 # OpenShift WildFly Cartridge
 
-These instructions will get you up and running with **WildFly 8.2.0.Final**. To run WildFly 9.0.0.CR1 instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-9). Alternatively, to run WildFly 10.0.0.Alpha1, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-10).
+These instructions will get you up and running with **WildFly 8.2.0.Final**. To run WildFly 9.0.0.CR1 instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-9). Alternatively, to run WildFly 10.0.0.Alpha2, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-10).
 
 This cartridge is based on the JBoss AS cartridge found in OpenShift Origin [here](https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossas).  
 
@@ -52,7 +52,7 @@ If you don't write it down, fear not, the following environment variables will c
 $OPENSHIFT_WILDFLY_USERNAME  
 $OPENSHIFT_WILDFLY_PASSWORD
 
-	corey$ rhc port-forward wildfly
+	corey$ rhc port-forward <WILDFLY_APP>
 	Checking available ports ... done
 	Forwarding ports ...
 
