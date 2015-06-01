@@ -14,15 +14,13 @@ You can also remove the pom.xml and /src directories and place a war file in the
 
 ### Create a new WildFly 9 app
 
-The following command can be used to create a new WildFly 9 app using the OpenShift [command line tools](https://www.openshift.com/get-started):
+There are a few ways to get started quickly on OpenShift. To create a new WildFly app using the OpenShift Web Console, click [here](https://openshift.redhat.com/app/console/application_type/cart!jboss-wildfly-9). If you'd like to use the OpenShift [command line tools](https://www.openshift.com/get-started) instead, the following command can be used:
 
-	rhc app create wildfly -s https://raw.githubusercontent.com/openshift-cartridges/openshift-wildfly-cartridge/wildfly-9/metadata/manifest.yml
+	rhc app create <WILDFLY_APP> -s jboss-wildfly-9
 	
 It will take a few minutes to build, so be patient.
 
 We recommend to create a scalable application since the WildFly cartridge might consume more storage on free plans. With a scalable application, any additional cartridges, such as a database cartridge, will be installed on separate gears.
-
-**NOTE:** It will soon be possible to create a WildFly 9 app using the OpenShift Web Console as well. Stay tuned for that.
 
 ### Create a new WildFly 9 app based on an existing app
 
