@@ -31,6 +31,7 @@
         <resource-root path="jaxb-core-2.2.11.jar"/>
         <resource-root path="jaxb-runtime-2.2.11.jar"/>
         <resource-root path="jaxb-xjc-2.2.11.jar"/>
+        <resource-root path="jaxb-jxc-2.2.11.jar"/>
         <resource-root path="codemodel-2.2.11.jar"/>
         <resource-root path="rngom-2.2.11.jar"/>
     </resources>

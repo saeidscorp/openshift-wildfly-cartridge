@@ -31,7 +31,7 @@
     <main-class name="org.jboss.as.host.controller.Main"/>
 
     <resources>
-        <resource-root path="wildfly-host-controller-1.0.0.CR1.jar"/>
+        <resource-root path="wildfly-host-controller-1.0.0.CR6.jar"/>
     </resources>
 
     <dependencies>
@@ -59,8 +59,7 @@
         <module name="org.jboss.as.protocol"/>
         <module name="org.jboss.as.remoting"/>
         <module name="org.wildfly.security.manager" services="import"/>
-        <module name="org.jboss.as.security" optional="true" services="import"/>
-        <module name="org.jboss.as.server"/>
+        <module name="org.jboss.as.server" services="import"/>
         <module name="org.jboss.as.version"/>
         <module name="org.jboss.logging"/>
         <module name="org.jboss.logmanager" services="import"/>

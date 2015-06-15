@@ -25,7 +25,7 @@
 <module xmlns="urn:jboss:module:1.3" name="org.jboss.narayana.compensations">
 
     <resources>
-        <resource-root path="compensations-5.0.4.Final.jar"/>
+        <resource-root path="compensations-5.0.6.Final.jar"/>
     </resources>
 
     <dependencies>

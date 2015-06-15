@@ -309,7 +309,7 @@
             <subsystem xmlns="urn:jboss:domain:undertow:2.0">
                 <buffer-cache name="default"/>
                 <server name="default-server">
-                    <http-listener name="default" socket-binding="http"/>
+                    <http-listener name="default" socket-binding="http" redirect-socket="https"/>
                     <host name="default-host" alias="localhost">
                         <location name="/" handler="welcome-content"/>
                         <filter-ref name="server-header"/>
@@ -642,7 +642,7 @@
                 <buffer-cache name="default"/>
                 <server name="default-server">
                     <ajp-listener name="ajp" socket-binding="ajp"/>
-                    <http-listener name="default" socket-binding="http"/>
+                    <http-listener name="default" socket-binding="http" redirect-socket="https"/>
                     <host name="default-host" alias="localhost">
                         <location name="/" handler="welcome-content"/>
                         <filter-ref name="server-header"/>
@@ -1021,7 +1021,7 @@
             <subsystem xmlns="urn:jboss:domain:undertow:2.0">
                 <buffer-cache name="default"/>
                 <server name="default-server">
-                    <http-listener name="default" socket-binding="http"/>
+                    <http-listener name="default" socket-binding="http" redirect-socket="https"/>
                     <host name="default-host" alias="localhost">
                         <location name="/" handler="welcome-content"/>
                         <filter-ref name="server-header"/>
@@ -1467,7 +1467,7 @@
                 <buffer-cache name="default"/>
                 <server name="default-server">
                     <ajp-listener name="ajp" socket-binding="ajp"/>
-                    <http-listener name="default" socket-binding="http"/>
+                    <http-listener name="default" socket-binding="http" redirect-socket="https"/>
                     <host name="default-host" alias="localhost">
                         <location name="/" handler="welcome-content"/>
                         <filter-ref name="server-header"/>

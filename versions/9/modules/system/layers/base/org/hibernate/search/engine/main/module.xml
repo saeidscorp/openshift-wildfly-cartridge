@@ -30,7 +30,7 @@
         <property name="jboss.api" value="private"/>
     </properties>
     <resources>
-        <resource-root path="hibernate-search-engine-5.1.2.Final.jar"/>
+        <resource-root path="hibernate-search-engine-5.2.0.Final.jar"/>
     </resources>
 
     <dependencies>
