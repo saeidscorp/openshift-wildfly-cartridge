@@ -33,7 +33,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-weld-10.0.0.Alpha2.jar"/>
+        <resource-root path="wildfly-weld-10.0.0.Alpha4.jar"/>
     </resources>
 
     <dependencies>
@@ -76,6 +76,7 @@
         <module name="org.jboss.metadata.ear"/>
         <module name="org.jboss.modules"/>
         <module name="org.jboss.msc"/>
+        <module name="org.jboss.threads"/>
         <module name="org.jboss.vfs"/>
         <module name="org.jboss.weld.api" />
         <module name="org.jboss.weld.core" />

@@ -35,7 +35,7 @@
     <main-class name="org.jboss.as.process.Main"/>
 
     <resources>
-        <resource-root path="wildfly-process-controller-2.0.0.Alpha3.jar"/>
+        <resource-root path="wildfly-process-controller-2.0.0.Alpha5.jar"/>
     </resources>
 
     <dependencies>

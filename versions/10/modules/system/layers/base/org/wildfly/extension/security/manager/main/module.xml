@@ -29,7 +29,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-security-manager-10.0.0.Alpha2.jar"/>
+        <resource-root path="wildfly-security-manager-10.0.0.Alpha4.jar"/>
     </resources>
 
     <dependencies>

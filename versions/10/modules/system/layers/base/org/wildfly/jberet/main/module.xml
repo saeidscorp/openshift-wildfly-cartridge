@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-jberet-10.0.0.Alpha2.jar"/>
+        <resource-root path="wildfly-jberet-10.0.0.Alpha4.jar"/>
     </resources>
 
     <dependencies>
@@ -41,6 +41,7 @@
         <module name="org.jboss.logging"/>
         <module name="org.jboss.msc"/>
         <module name="org.picketbox"/>
+        <module name="org.wildfly.extension.request-controller"/>
         <module name="org.wildfly.security.elytron"/>
     </dependencies>
 </module>

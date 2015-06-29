@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-naming-10.0.0.Alpha2.jar"/>
+        <resource-root path="wildfly-naming-10.0.0.Alpha4.jar"/>
     </resources>
 
     <dependencies>

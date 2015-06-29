@@ -34,7 +34,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-embedded-2.0.0.Alpha3.jar"/>
+        <resource-root path="wildfly-embedded-2.0.0.Alpha5.jar"/>
     </resources>
 
     <dependencies>
