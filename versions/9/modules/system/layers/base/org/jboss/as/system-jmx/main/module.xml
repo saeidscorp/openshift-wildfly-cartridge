@@ -29,7 +29,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-system-jmx-9.0.0.CR2.jar"/>
+        <resource-root path="wildfly-system-jmx-9.0.0.Final.jar"/>
     </resources>
 
     <dependencies>

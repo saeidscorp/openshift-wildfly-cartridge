@@ -31,7 +31,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-request-controller-1.0.0.CR6.jar"/>
+        <resource-root path="wildfly-request-controller-1.0.0.Final.jar"/>
     </resources>
 
     <dependencies>
