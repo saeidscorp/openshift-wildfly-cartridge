@@ -1,6 +1,6 @@
 # OpenShift WildFly Cartridge
 
-These instructions will get you up and running with **WildFly 10.0.0.Alpha4**. To run WildFly 9.0.0.CR2 instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-9). Alternatively, to run WildFly 8.2.0.Final, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-8).
+These instructions will get you up and running with **WildFly 10.0.0.Alpha4**. To run WildFly 9.0.0.Final instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-9). Alternatively, to run WildFly 8.2.0.Final, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-8).
 
 This cartridge is based on the JBoss AS cartridge found in OpenShift Origin [here](https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossas).  
 
