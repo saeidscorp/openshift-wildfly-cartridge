@@ -31,7 +31,7 @@
     <main-class name="org.jboss.as.server.DomainServerMain"/>
 
     <resources>
-        <resource-root path="wildfly-server-2.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-server-2.0.0.Alpha9.jar"/>
     </resources>
 
     <dependencies>

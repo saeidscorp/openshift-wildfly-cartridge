@@ -336,7 +336,6 @@
         <subsystem xmlns="urn:jboss:domain:messaging-activemq:1.0">
             <server name="default">
                 <cluster password="${jboss.messaging.cluster.password:CHANGE ME!!}"/>
-                <journal file-size="102400"/>
                 <security-setting name="#">
                     <role name="guest" send="true" consume="true" create-non-durable-queue="true" delete-non-durable-queue="true"/>
                 </security-setting>
