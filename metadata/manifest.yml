@@ -7,7 +7,7 @@ Source-Url: https://github.com/openshift-cartridges/openshift-wildfly-cartridge/
 License: LGPL
 License-Url: http://www.gnu.org/copyleft/lesser.txt
 Vendor: JBoss
-Cartridge-Version: '0.1.2'
+Cartridge-Version: '0.1.3'
 Cartridge-Vendor: jboss
 Categories:
   - service
