@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-clustering-spi-9.0.0.Final.jar"/>
+        <resource-root path="wildfly-clustering-spi-9.0.1.Final.jar"/>
     </resources>
 
     <dependencies>

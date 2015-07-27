@@ -24,7 +24,7 @@
 
 <module xmlns="urn:jboss:module:1.3" name="org.jboss.as.self-contained">
     <resources>
-        <resource-root path="wildfly-self-contained-1.0.0.Final.jar"/>
+        <resource-root path="wildfly-self-contained-1.0.1.Final.jar"/>
     </resources>
 
     <dependencies>

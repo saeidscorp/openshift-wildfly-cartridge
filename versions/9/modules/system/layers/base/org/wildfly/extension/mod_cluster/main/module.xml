@@ -28,11 +28,12 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-mod_cluster-extension-9.0.0.Final.jar"/>
+        <resource-root path="wildfly-mod_cluster-extension-9.0.1.Final.jar"/>
     </resources>
 
     <dependencies>
         <module name="javax.api"/>
+        <module name="org.jboss.common-core"/>
         <module name="org.jboss.as.clustering.common"/>
         <module name="org.jboss.as.controller"/>
         <module name="org.jboss.as.network"/>

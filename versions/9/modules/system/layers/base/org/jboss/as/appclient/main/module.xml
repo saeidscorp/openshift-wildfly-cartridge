@@ -35,7 +35,7 @@
     <main-class name="org.jboss.as.appclient.subsystem.Main"/>
 
     <resources>
-        <resource-root path="wildfly-appclient-9.0.0.Final.jar"/>
+        <resource-root path="wildfly-appclient-9.0.1.Final.jar"/>
     </resources>
 
     <dependencies>
