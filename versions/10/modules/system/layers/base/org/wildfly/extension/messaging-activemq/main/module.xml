@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-messaging-activemq-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-messaging-activemq-10.0.0.Alpha5-Elytron1.jar"/>
         <resource-root path="artemis-wildfly-integration-1.0.1.jar"/>
     </resources>
 

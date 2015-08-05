@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-ejb3-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-ejb3-10.0.0.Alpha5-Elytron1.jar"/>
         <resource-root path="timers" />
     </resources>
 

@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-controller-2.0.0.Alpha9.jar"/>
+        <resource-root path="wildfly-controller-2.0.0.Alpha7-Elytron1.jar"/>
     </resources>
 
     <dependencies>
