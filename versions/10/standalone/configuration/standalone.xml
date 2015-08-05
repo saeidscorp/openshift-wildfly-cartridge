@@ -26,6 +26,7 @@
         <extension module="org.jboss.as.weld"/>
         <extension module="org.wildfly.extension.batch"/>
         <extension module="org.wildfly.extension.bean-validation"/>
+        <extension module="org.wildfly.extension.elytron"/>
         <extension module="org.wildfly.extension.io"/>
         <extension module="org.wildfly.extension.messaging-activemq"/>
         <extension module="org.wildfly.extension.request-controller"/>
@@ -415,6 +416,26 @@
                     <permission class="java.security.AllPermission"/>
                 </maximum-set>
             </deployment-permissions>
+        </subsystem>
+        <subsystem xmlns="urn:wildfly:elytron:1.0">
+            <security-domains>
+                <security-domain name="ApplicationDomain" default-realm="ApplicationRealm">
+                    <realm name="ApplicationRealm"/>
+                </security-domain>
+                <security-domain name="ManagementDomain" default-realm="ManagementRealm">
+                    <realm name="ManagementRealm"/>
+                </security-domain>
+            </security-domains>
+            <security-realms>
+                <properties-realm name="ApplicationRealm">
+                    <users-properties path="application-users.properties" relative-to="jboss.server.config.dir"/>
+                    <groups-properties path="application-roles.properties" relative-to="jboss.server.config.dir"/>
+                </properties-realm>
+                <properties-realm name="ManagementRealm">
+                    <users-properties path="mgmt-users.properties" relative-to="jboss.server.config.dir"/>
+                    <groups-properties path="mgmt-groups.properties" relative-to="jboss.server.config.dir"/>
+                </properties-realm>
+            </security-realms>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:security:2.0">
             <security-domains>
