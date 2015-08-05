@@ -1,6 +1,6 @@
 # OpenShift WildFly Cartridge
 
-These instructions will get you up and running with **WildFly 10.0.0.Alpha5**. To run WildFly 9.0.1.Final instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-9). Alternatively, to run WildFly 8.2.1.Final, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-8).
+These instructions will get you up and running with **WildFly 10.0.0.Alpha5-Elytron1**. To run WildFly 10.0.0.Alpha5 instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-10). To run WildFly 9.0.1.Final instead, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-9). Alternatively, to run WildFly 8.2.1.Final, take a look at the documentation [here](https://github.com/openshift-cartridges/openshift-wildfly-cartridge/tree/wildfly-8).
 
 This cartridge is based on the JBoss AS cartridge found in OpenShift Origin [here](https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossas).  
 
@@ -16,7 +16,7 @@ You can also remove the pom.xml and /src directories and place a war file in the
 
 The following command can be used to create a new WildFly 10 app using the OpenShift [command line tools](https://www.openshift.com/get-started):
 
-	rhc app create wildfly -s https://raw.githubusercontent.com/openshift-cartridges/openshift-wildfly-cartridge/wildfly-10/metadata/manifest.yml
+	rhc app create wildfly https://raw.githubusercontent.com/openshift-cartridges/openshift-wildfly-cartridge/elytron_integration/metadata/manifest.yml
 	
 It will take a few minutes to build, so be patient.
 
