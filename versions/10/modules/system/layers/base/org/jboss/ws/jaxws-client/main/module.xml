@@ -29,8 +29,8 @@
     </properties>
 
     <resources>
-        <resource-root path="jbossws-cxf-client-5.0.0.Final.jar"/>
-        <resource-root path="jbossws-cxf-jaspi-5.0.0.Final.jar"/>
+        <resource-root path="jbossws-cxf-client-5.1.0.Beta1.jar"/>
+        <resource-root path="jbossws-cxf-jaspi-5.1.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
@@ -69,11 +69,6 @@
         <module name="org.jboss.logging" />
         <module name="org.picketbox"/>
         <module name="org.apache.commons.beanutils"/>
-        <module name="org.springframework.spring" optional="true">
-          <imports>
-            <include path="META-INF"/>
-          </imports>
-        </module>
         <module name="javax.wsdl4j.api" />
         <module name="org.bouncycastle" />
     </dependencies>

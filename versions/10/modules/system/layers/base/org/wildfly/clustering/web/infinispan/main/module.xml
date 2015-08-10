@@ -32,12 +32,13 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-clustering-web-infinispan-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-clustering-web-infinispan-10.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
         <module name="javax.servlet.api"/>
 
+        <module name="net.jcip"/>
         <module name="org.infinispan"/>
         <module name="org.infinispan.commons"/>
         <module name="org.jboss.logging"/>

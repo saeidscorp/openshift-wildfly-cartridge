@@ -33,7 +33,7 @@
     </properties>
 
     <resources>
-        <resource-root path="xmlsec-2.0.4.jar"/>
+        <resource-root path="xmlsec-2.0.5.jar"/>
     </resources>
 
     <dependencies>

@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-jsr77-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-jsr77-10.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
@@ -38,7 +38,6 @@
         <module name="org.jboss.as.controller"/>
         <module name="org.jboss.as.ee"/>
         <module name="org.jboss.as.ejb3"/>
-        <module name="org.jboss.as.jmx"/>
         <module name="org.jboss.as.naming"/>
         <module name="org.wildfly.security.elytron"/>
         <module name="org.jboss.as.server"/>

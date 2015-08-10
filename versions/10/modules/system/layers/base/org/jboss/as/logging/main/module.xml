@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-logging-2.0.0.Alpha9.jar"/>
+        <resource-root path="wildfly-logging-2.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>

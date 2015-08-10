@@ -35,7 +35,7 @@
     <main-class name="org.jboss.as.appclient.subsystem.Main"/>
 
     <resources>
-        <resource-root path="wildfly-appclient-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-appclient-10.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
@@ -64,7 +64,7 @@
         <module name="org.jboss.as.domain-http-interface"/>
         <module name="org.jboss.as.domain-management"/>
         <module name="org.jboss.as.ee"/>
-        <module name="org.jboss.as.embedded"/>
+        <module name="org.wildfly.embedded"/>
         <module name="org.jboss.as.network"/>
         <module name="org.jboss.as.platform-mbean"/>
         <module name="org.jboss.as.process-controller"/>

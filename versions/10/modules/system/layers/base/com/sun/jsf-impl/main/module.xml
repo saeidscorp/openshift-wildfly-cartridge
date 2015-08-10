@@ -38,6 +38,6 @@
     </dependencies>
 
     <resources>
-        <resource-root path="jsf-impl-2.2.11-jbossorg-1.jar"/>
+        <resource-root path="jsf-impl-2.2.12-jbossorg-2.jar"/>
     </resources>
 </module>

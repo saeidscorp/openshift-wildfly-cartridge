@@ -28,7 +28,9 @@
         <resource-root path="artemis-core-client-1.0.0.jar"/>
         <resource-root path="artemis-selector-1.0.0.jar"/>
         <resource-root path="artemis-server-1.0.0.jar"/>
+        <resource-root path="artemis-cli-1.0.0.jar"/>
         <resource-root path="artemis-commons-1.0.0.jar"/>
+        <resource-root path="artemis-dto-1.0.0.jar"/>
         <resource-root path="artemis-journal-1.0.0.jar"/>
         <resource-root path="artemis-jms-client-1.0.0.jar"/>
         <resource-root path="artemis-jms-server-1.0.0.jar"/>

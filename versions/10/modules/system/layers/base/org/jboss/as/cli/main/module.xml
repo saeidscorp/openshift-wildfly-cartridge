@@ -31,7 +31,7 @@
     <main-class name="org.jboss.as.cli.CommandLineMain"/>
 
     <resources>
-        <resource-root path="wildfly-cli-2.0.0.Alpha9.jar"/>
+        <resource-root path="wildfly-cli-2.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
@@ -52,6 +52,7 @@
         <module name="org.jboss.vfs"/>
         <module name="org.picketbox" optional="true"/>
         <module name="org.wildfly.embedded"/>
+        <module name="org.jboss.as.process-controller"/>
         <module name="javax.api"/>
         <module name="ibm.jdk" />
         <module name="sun.jdk" />

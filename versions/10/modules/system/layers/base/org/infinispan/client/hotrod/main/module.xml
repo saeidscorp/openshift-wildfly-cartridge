@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="infinispan-client-hotrod-7.2.3.Final.jar"/>
+        <resource-root path="infinispan-client-hotrod-8.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
@@ -34,7 +34,6 @@
         <module name="com.google.protobuf" optional="true"/>
         <module name="org.apache.commons.pool"/>
         <module name="org.infinispan.commons"/>
-        <module name="org.infinispan.query.dsl"/>
         <module name="org.jboss.logging"/>
     </dependencies>
 </module>

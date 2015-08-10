@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-batch-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-batch-10.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
@@ -49,6 +49,7 @@
         <module name="org.jboss.staxmapper"/>
         <module name="org.jboss.vfs"/>
         <module name="org.wildfly.extension.request-controller"/>
+        <module name="org.wildfly.extension.batch.jberet"/>
         <module name="org.wildfly.jberet" services="import"/>
         <module name="org.wildfly.security.elytron"/>
     </dependencies>

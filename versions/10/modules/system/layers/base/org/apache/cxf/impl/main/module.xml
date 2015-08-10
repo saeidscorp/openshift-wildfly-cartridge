@@ -29,36 +29,37 @@
     </properties>
 
     <resources>
-        <resource-root path="cxf-rt-bindings-coloc-3.0.5.jar"/>
-        <resource-root path="cxf-rt-bindings-object-3.0.5.jar"/>
-        <resource-root path="cxf-rt-bindings-soap-3.0.5.jar"/>
-        <resource-root path="cxf-rt-bindings-xml-3.0.5.jar"/>
-        <resource-root path="cxf-rt-databinding-aegis-3.0.5.jar"/>
-        <resource-root path="cxf-rt-databinding-jaxb-3.0.5.jar"/>
-        <resource-root path="cxf-rt-frontend-jaxws-3.0.5.jar"/>
-        <resource-root path="cxf-rt-frontend-simple-3.0.5.jar"/>
-        <resource-root path="cxf-rt-management-3.0.5.jar"/>
-        <resource-root path="cxf-rt-security-3.0.5.jar"/>
-        <resource-root path="cxf-rt-security-3.0.5-jandex.jar"/>
-        <resource-root path="cxf-rt-transports-http-3.0.5.jar"/>
-        <resource-root path="cxf-rt-transports-http-hc-3.0.5.jar"/>
-        <resource-root path="cxf-rt-transports-jms-3.0.5.jar"/>
-        <resource-root path="cxf-rt-transports-local-3.0.5.jar"/>
-        <resource-root path="cxf-rt-wsdl-3.0.5.jar"/>
-        <resource-root path="cxf-rt-ws-addr-3.0.5.jar"/>
-        <resource-root path="cxf-rt-ws-mex-3.0.5.jar"/>
-        <resource-root path="cxf-rt-ws-policy-3.0.5.jar"/>
-        <resource-root path="cxf-rt-ws-rm-3.0.5.jar"/>
-        <resource-root path="cxf-rt-ws-security-3.0.5.jar"/>
-        <resource-root path="cxf-rt-ws-security-3.0.5-jandex.jar"/>
-        <resource-root path="cxf-tools-common-3.0.5.jar"/>
-        <resource-root path="cxf-tools-java2ws-3.0.5.jar"/>
-        <resource-root path="cxf-tools-validator-3.0.5.jar"/>
-        <resource-root path="cxf-tools-wsdlto-core-3.0.5.jar"/>
-        <resource-root path="cxf-tools-wsdlto-databinding-jaxb-3.0.5.jar"/>
-        <resource-root path="cxf-tools-wsdlto-frontend-jaxws-3.0.5.jar"/>
-        <resource-root path="cxf-services-sts-core-3.0.5.jar"/>
-        <resource-root path="cxf-services-ws-discovery-api-3.0.5.jar"/>
+        <resource-root path="cxf-rt-bindings-coloc-3.1.2.jar"/>
+        <resource-root path="cxf-rt-bindings-object-3.1.2.jar"/>
+        <resource-root path="cxf-rt-bindings-soap-3.1.2.jar"/>
+        <resource-root path="cxf-rt-bindings-xml-3.1.2.jar"/>
+        <resource-root path="cxf-rt-databinding-aegis-3.1.2.jar"/>
+        <resource-root path="cxf-rt-databinding-jaxb-3.1.2.jar"/>
+        <resource-root path="cxf-rt-frontend-jaxws-3.1.2.jar"/>
+        <resource-root path="cxf-rt-frontend-simple-3.1.2.jar"/>
+        <resource-root path="cxf-rt-management-3.1.2.jar"/>
+        <resource-root path="cxf-rt-security-3.1.2.jar"/>
+        <resource-root path="cxf-rt-security-3.1.2-jandex.jar"/>
+        <resource-root path="cxf-rt-security-saml-3.1.2.jar"/>
+        <resource-root path="cxf-rt-transports-http-3.1.2.jar"/>
+        <resource-root path="cxf-rt-transports-http-hc-3.1.2.jar"/>
+        <resource-root path="cxf-rt-transports-jms-3.1.2.jar"/>
+        <resource-root path="cxf-rt-transports-local-3.1.2.jar"/>
+        <resource-root path="cxf-rt-wsdl-3.1.2.jar"/>
+        <resource-root path="cxf-rt-ws-addr-3.1.2.jar"/>
+        <resource-root path="cxf-rt-ws-mex-3.1.2.jar"/>
+        <resource-root path="cxf-rt-ws-policy-3.1.2.jar"/>
+        <resource-root path="cxf-rt-ws-rm-3.1.2.jar"/>
+        <resource-root path="cxf-rt-ws-security-3.1.2.jar"/>
+        <resource-root path="cxf-rt-ws-security-3.1.2-jandex.jar"/>
+        <resource-root path="cxf-tools-common-3.1.2.jar"/>
+        <resource-root path="cxf-tools-java2ws-3.1.2.jar"/>
+        <resource-root path="cxf-tools-validator-3.1.2.jar"/>
+        <resource-root path="cxf-tools-wsdlto-core-3.1.2.jar"/>
+        <resource-root path="cxf-tools-wsdlto-databinding-jaxb-3.1.2.jar"/>
+        <resource-root path="cxf-tools-wsdlto-frontend-jaxws-3.1.2.jar"/>
+        <resource-root path="cxf-services-sts-core-3.1.2.jar"/>
+        <resource-root path="cxf-services-ws-discovery-api-3.1.2.jar"/>
         <resource-root path="cxf-xjc-boolean-3.0.3.jar"/>
         <resource-root path="cxf-xjc-dv-3.0.3.jar"/>
         <resource-root path="cxf-xjc-ts-3.0.3.jar"/>
@@ -90,11 +91,6 @@
         <module name="org.codehaus.woodstox" />
         <module name="org.joda.time" />
         <module name="org.opensaml" />
-        <module name="org.springframework.spring" optional="true">
-          <imports>
-            <include path="META-INF"/>
-          </imports>
-        </module>
         <module name="org.apache.cxf" export="true">
           <imports>
             <include path="META-INF/cxf"/>

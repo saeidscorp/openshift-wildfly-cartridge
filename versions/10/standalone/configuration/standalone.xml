@@ -24,8 +24,9 @@
         <extension module="org.jboss.as.transactions"/>
         <extension module="org.jboss.as.webservices"/>
         <extension module="org.jboss.as.weld"/>
-        <extension module="org.wildfly.extension.batch"/>
+        <extension module="org.wildfly.extension.batch.jberet"/>
         <extension module="org.wildfly.extension.bean-validation"/>
+        <extension module="org.wildfly.extension.clustering.singleton"/>
         <extension module="org.wildfly.extension.io"/>
         <extension module="org.wildfly.extension.messaging-activemq"/>
         <extension module="org.wildfly.extension.request-controller"/>
@@ -124,11 +125,13 @@
                 <pattern-formatter pattern="%K{level}%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n"/>
             </formatter>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:batch:1.0">
-            <job-repository>
+        <subsystem xmlns="urn:jboss:domain:batch-jberet:1.0">
+            <default-job-repository name="in-memory"/>
+            <default-thread-pool name="batch"/>
+            <job-repository name="in-memory">
                 <in-memory/>
             </job-repository>
-            <thread-pool>
+            <thread-pool name="batch">
                 <max-threads count="10"/>
                 <keepalive-time time="30" unit="seconds"/>
             </thread-pool>
@@ -257,7 +260,7 @@
             <worker name="default"/>
             <buffer-pool name="default"/>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:infinispan:3.0">
+        <subsystem xmlns="urn:jboss:domain:infinispan:4.0">
             <cache-container name="server" aliases="singleton cluster" default-cache="default" module="org.wildfly.clustering.server">
                 <transport lock-timeout="60000"/>
                 <replicated-cache name="default" mode="SYNC">
@@ -295,11 +298,10 @@
             </cache-container>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
-            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"/>
             <initializers transactions="spec" security="identity"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
-        <subsystem xmlns="urn:jboss:domain:jca:3.0">
+        <subsystem xmlns="urn:jboss:domain:jca:4.0">
             <archive-validation enabled="true" fail-on-error="true" fail-on-warn="false"/>
             <bean-validation enabled="true"/>
             <default-workmanager>
@@ -403,7 +405,7 @@
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:pojo:1.0"/>
         <subsystem xmlns="urn:jboss:domain:remoting:3.0">
-            <endpoint worker="default"/>
+            <endpoint/>
             <http-connector name="http-remoting-connector" connector-ref="default" security-realm="ApplicationRealm"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:resource-adapters:3.0"/>
@@ -439,6 +441,13 @@
                     </authorization>
                 </security-domain>
             </security-domains>
+        </subsystem>
+        <subsystem xmlns="urn:jboss:domain:singleton:1.0">
+            <singleton-policies default="default">
+                <singleton-policy name="default" cache-container="server">
+                    <simple-election-policy/>
+                </singleton-policy>
+            </singleton-policies>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:transactions:3.0">
             <core-environment>

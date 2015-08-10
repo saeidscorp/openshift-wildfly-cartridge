@@ -29,7 +29,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jbossws-cxf-transports-undertow-5.0.0.Final.jar"/>
+        <resource-root path="jbossws-cxf-transports-undertow-5.1.0.Beta1.jar"/>
     </resources>
 
     <dependencies>

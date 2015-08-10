@@ -33,7 +33,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-bean-validation-10.0.0.Alpha5.jar"/>
+        <resource-root path="wildfly-bean-validation-10.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>
