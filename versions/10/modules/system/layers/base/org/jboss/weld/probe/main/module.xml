@@ -29,12 +29,13 @@
     </properties>
 
     <resources>
-        <resource-root path="weld-probe-core-2.3.0.Beta3.jar"/>
+        <resource-root path="weld-probe-core-2.3.0.CR1.jar"/>
     </resources>
 
     <dependencies>
         <module name="ch.qos.cal10n" />
         <module name="com.google.guava"/>
+        <module name="javax.api"/>
         <module name="javax.annotation.api"/>
         <module name="javax.enterprise.api"/>
         <module name="javax.inject.api"/>

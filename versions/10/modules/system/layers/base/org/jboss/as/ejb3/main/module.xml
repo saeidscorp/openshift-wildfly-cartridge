@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-ejb3-10.0.0.Beta1.jar"/>
+        <resource-root path="wildfly-ejb3-10.0.0.Beta2.jar"/>
         <resource-root path="timers" />
     </resources>
 
@@ -50,6 +50,7 @@
         <module name="org.wildfly.clustering.marshalling"/>
         <module name="org.wildfly.clustering.service"/>
         <module name="org.wildfly.clustering.spi"/>
+        <module name="org.wildfly.clustering.singleton"/>
         <module name="org.wildfly.extension.request-controller" />
         <module name="org.jboss.as.controller"/>
         <module name="org.jboss.as.weld"/>

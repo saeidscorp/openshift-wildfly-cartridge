@@ -25,7 +25,7 @@
 <!-- Represents the OpenJPA module  -->
 <module xmlns="urn:jboss:module:1.3" name="org.apache.openjpa">
     <resources>
-        <resource-root path="jipijapa-openjpa-10.0.0.Beta1.jar"/>
+        <resource-root path="jipijapa-openjpa-10.0.0.Beta2.jar"/>
     </resources>
 
     <dependencies>

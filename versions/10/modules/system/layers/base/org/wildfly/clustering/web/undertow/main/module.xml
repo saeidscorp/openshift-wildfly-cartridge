@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-clustering-web-undertow-10.0.0.Beta1.jar"/>
+        <resource-root path="wildfly-clustering-web-undertow-10.0.0.Beta2.jar"/>
     </resources>
 
     <dependencies>

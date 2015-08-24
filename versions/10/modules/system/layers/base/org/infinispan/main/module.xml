@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="infinispan-core-8.0.0.Beta1.jar"/>
+        <resource-root path="infinispan-core-8.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>

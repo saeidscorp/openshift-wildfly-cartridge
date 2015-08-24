@@ -28,8 +28,8 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-jsf-injection-10.0.0.Beta1.jar"/>
-        <resource-root path="weld-core-jsf-2.3.0.Beta3.jar"/>
+        <resource-root path="wildfly-jsf-injection-10.0.0.Beta2.jar"/>
+        <resource-root path="weld-core-jsf-2.3.0.CR1.jar"/>
     </resources>
 
     <dependencies>

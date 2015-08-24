@@ -32,7 +32,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-deployment-scanner-2.0.0.Beta1.jar"/>
+        <resource-root path="wildfly-deployment-scanner-2.0.0.Beta4.jar"/>
     </resources>
 
     <dependencies>

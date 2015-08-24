@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="narayana-jts-idlj-5.2.1.Final.jar"/>
+        <resource-root path="narayana-jts-idlj-5.2.2.Final.jar"/>
     </resources>
 
     <dependencies>
@@ -41,7 +41,7 @@
         <module name="javax.api"/>
         <module name="javax.transaction.api"/>
         <module name="javax.resource.api"/>
-        <module name="org.hornetq.journal"/>
+        <module name="org.apache.activemq.artemis"/>
         <module name="javax.orb.api"/>
         <module name="javax.enterprise.api"/>
         <module name="org.jboss.weld.core"/>

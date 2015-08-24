@@ -28,8 +28,8 @@
     </properties>
 
     <resources>
-        <resource-root path="infinispan-lucene-directory-8.0.0.Beta1.jar"/>
-        <resource-root path="infinispan-directory-provider-8.0.0.Beta1.jar"/>
+        <resource-root path="infinispan-lucene-directory-8.0.0.CR1.jar"/>
+        <resource-root path="infinispan-directory-provider-8.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>
