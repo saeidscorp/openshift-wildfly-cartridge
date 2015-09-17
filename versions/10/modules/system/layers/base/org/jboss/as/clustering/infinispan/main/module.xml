@@ -32,7 +32,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-clustering-infinispan-extension-10.0.0.Beta2.jar"/>
+        <resource-root path="wildfly-clustering-infinispan-extension-10.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>
@@ -66,6 +66,7 @@
         <module name="org.wildfly.clustering.ee.spi"/>
         <module name="org.wildfly.clustering.infinispan.spi"/>
         <module name="org.wildfly.clustering.jgroups.spi"/>
+        <module name="org.wildfly.clustering.marshalling.api"/>
         <module name="org.wildfly.clustering.service"/>
         <module name="org.wildfly.clustering.spi"/>
         <module name="org.wildfly.security.elytron"/>

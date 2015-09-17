@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-clustering-infinispan-spi-10.0.0.Beta2.jar"/>
+        <resource-root path="wildfly-clustering-infinispan-spi-10.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>
@@ -36,9 +36,7 @@
         <module name="org.infinispan.commons"/>
         <module name="org.infinispan"/>
         <module name="org.jboss.logging"/>
-        <!--module name="org.jgroups"/-->
-        <!--module name="org.wildfly.clustering.jgroups.api"/-->
-        <module name="org.wildfly.clustering.marshalling"/>
+        <module name="org.wildfly.clustering.marshalling.api"/>
         <module name="org.wildfly.clustering.service"/>
         <module name="org.wildfly.security.elytron"/>
         <module name="org.jboss.msc"/>

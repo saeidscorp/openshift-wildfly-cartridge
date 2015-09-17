@@ -28,8 +28,8 @@
     </properties>
 
     <resources>
-        <resource-root path="artemis-ra-1.0.0.jar"/>
-        <resource-root path="artemis-service-extensions-1.0.0.jar"/>
+        <resource-root path="artemis-ra-1.1.0-wildfly-6.jar"/>
+        <resource-root path="artemis-service-extensions-1.1.0-wildfly-6.jar"/>
     </resources>
 
     <dependencies>

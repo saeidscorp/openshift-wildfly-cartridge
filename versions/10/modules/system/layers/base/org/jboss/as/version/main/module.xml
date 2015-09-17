@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-version-2.0.0.Beta4.jar"/>
+        <resource-root path="wildfly-version-2.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>

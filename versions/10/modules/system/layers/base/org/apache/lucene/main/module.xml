@@ -28,15 +28,15 @@
     </properties>
 
     <resources>
-        <resource-root path="lucene-analyzers-common-5.2.1.jar"/>
-        <resource-root path="lucene-core-5.2.1.jar"/>
-        <resource-root path="lucene-facet-5.2.1.jar"/>
-        <resource-root path="lucene-memory-5.2.1.jar"/>
-        <resource-root path="lucene-queries-5.2.1.jar"/>
-        <resource-root path="lucene-queryparser-5.2.1.jar"/>
+        <resource-root path="lucene-analyzers-common-5.3.0.jar"/>
+        <resource-root path="lucene-core-5.3.0.jar"/>
+        <resource-root path="lucene-facet-5.3.0.jar"/>
+        <resource-root path="lucene-queries-5.3.0.jar"/>
+        <resource-root path="lucene-queryparser-5.3.0.jar"/>
     </resources>
 
     <dependencies>
         <module name="javax.api"/>
+        <module name="org.apache.lucene.internal" optional="true" services="import"/>
     </dependencies>
 </module>

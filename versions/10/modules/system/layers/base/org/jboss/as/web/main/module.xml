@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-web-10.0.0.Beta2.jar"/>
+        <resource-root path="wildfly-web-10.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>
@@ -39,6 +39,5 @@
         <module name="org.jboss.modules"/>
         <module name="org.jboss.logging"/>
         <module name="org.wildfly.extension.undertow"/>
-        <module name="org.jboss.as.domain-management" />
     </dependencies>
 </module>

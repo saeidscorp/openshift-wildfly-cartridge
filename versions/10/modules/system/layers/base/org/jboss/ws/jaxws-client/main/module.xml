@@ -29,8 +29,8 @@
     </properties>
 
     <resources>
-        <resource-root path="jbossws-cxf-client-5.1.0.Beta1.jar"/>
-        <resource-root path="jbossws-cxf-jaspi-5.1.0.Beta1.jar"/>
+        <resource-root path="jbossws-cxf-client-5.1.0.Final.jar"/>
+        <resource-root path="jbossws-cxf-jaspi-5.1.0.Final.jar"/>
     </resources>
 
     <dependencies>
