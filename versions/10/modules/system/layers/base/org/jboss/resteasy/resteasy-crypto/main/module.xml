@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="resteasy-crypto-3.0.12.Final.jar"/>
+        <resource-root path="resteasy-crypto-3.0.13.Final.jar"/>
     </resources>
 
     <dependencies>
@@ -40,5 +40,6 @@
         <module name="javax.ws.rs.api"/>
         <module name="org.bouncycastle"/>
         <module name="org.jboss.resteasy.resteasy-jaxrs"/>
+        <module name="org.jboss.logging"/>
     </dependencies>
 </module>

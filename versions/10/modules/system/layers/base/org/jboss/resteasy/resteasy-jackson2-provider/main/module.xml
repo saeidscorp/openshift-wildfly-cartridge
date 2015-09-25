@@ -24,7 +24,7 @@
 
 <module xmlns="urn:jboss:module:1.3" name="org.jboss.resteasy.resteasy-jackson2-provider">
     <resources>
-        <resource-root path="resteasy-jackson2-provider-3.0.12.Final.jar"/>
+        <resource-root path="resteasy-jackson2-provider-3.0.13.Final.jar"/>
     </resources>
 
     <dependencies>
@@ -38,5 +38,6 @@
         <module name="javax.servlet.api"/>
         <module name="javax.ws.rs.api"/>
         <module name="org.jboss.resteasy.resteasy-jaxrs"/>
+        <module name="org.jboss.logging"/>
     </dependencies>
 </module>

@@ -29,7 +29,7 @@
     </properties>
 
     <resources>
-        <resource-root path="weld-probe-core-2.3.0.CR2.jar"/>
+        <resource-root path="weld-probe-core-2.3.0.Final.jar"/>
     </resources>
 
     <dependencies>

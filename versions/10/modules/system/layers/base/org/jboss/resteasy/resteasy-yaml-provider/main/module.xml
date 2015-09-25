@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="resteasy-yaml-provider-3.0.12.Final.jar"/>
+        <resource-root path="resteasy-yaml-provider-3.0.13.Final.jar"/>
     </resources>
 
     <dependencies>

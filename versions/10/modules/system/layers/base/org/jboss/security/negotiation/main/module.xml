@@ -28,14 +28,14 @@
     </properties>
 
     <resources>
-        <resource-root path="jboss-negotiation-common-2.3.8.Final.jar"/>
-        <resource-root path="jboss-negotiation-extras-2.3.8.Final.jar"/>
-        <resource-root path="jboss-negotiation-net-2.3.8.Final.jar"/>
-        <resource-root path="jboss-negotiation-ntlm-2.3.8.Final.jar"/>
-        <resource-root path="jboss-negotiation-spnego-2.3.8.Final.jar"/>
+        <resource-root path="jboss-negotiation-common-3.0.0.CR1.jar"/>
+        <resource-root path="jboss-negotiation-extras-3.0.0.CR1.jar"/>
+        <resource-root path="jboss-negotiation-ntlm-3.0.0.CR1.jar"/>
+        <resource-root path="jboss-negotiation-spnego-3.0.0.CR1.jar"/>
     </resources>
 
     <dependencies>
+        <module name="io.undertow.core" />
         <module name="javax.api"/>
         <module name="javax.servlet.api"/>
         <module name="org.jboss.as.web-common"/>
